@@ -10,6 +10,7 @@ import { StorePage } from '../pages/store/store';
 import { StoreListPage } from '../pages/store-list/store-list';
 import { EmployeePage } from '../pages/employee/employee';
 import { EmployeeListPage } from '../pages/employee-list/employee-list';
+import { LaunchNavigator } from '@ionic-native/launch-navigator';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { EmployeeListPage } from '../pages/employee-list/employee-list';
     EmployeeListPage
   ],
   providers: [
+    LaunchNavigator,
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler}

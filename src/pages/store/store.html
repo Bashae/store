@@ -1,7 +1,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Store: 2414</ion-title>
+    <ion-title>Store: {{store.number}}</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -10,12 +10,18 @@
 <ion-content>
   <ion-card>
     <img src="{{store.image}}" alt="">
-    <ion-card-content style="text-align: center;">
-      <address>
-        {{store.address}}<br>
-        {{store.address2}}
-      </address>
-      <h2>{{store.telephone}}</h2>
+    <ion-card-content>
+      <ion-item>
+        <ion-icon name="navigate" item-start (click)="goToLocation()"></ion-icon>
+          {{store.address}}<br>
+          {{store.address2}}
+      </ion-item>
+      <ion-item class="phone">
+        <ion-icon name="call" item-start>
+          <a style="text-indent: -9999px;" href="tel:{{store.telephone}}">{{store.telephone}}</a>
+        </ion-icon>
+        <a href="tel:{{store.telephone}}">{{store.telephone}}</a>
+      </ion-item>
     </ion-card-content>
   </ion-card>
 

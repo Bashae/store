@@ -6,4 +6,17 @@ page-store {
     .content {
         padding: 0;
     }
+    .phone {
+        ion-icon {
+            position: relative;
+        }
+        ion-icon a {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            text-indent: -9999px;
+        }
+    }
 }
