@@ -1,0 +1,8 @@
+{
+  "name": "MFRM",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular",
+  "pro_id": "7057fc40"
+}
