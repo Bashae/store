@@ -1,14 +1,23 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      North Central
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <ion-list>
+    <ion-list-header>
+      Store List
+    </ion-list-header>
+    <ion-item *ngFor="let store of stores" (click)="goToStore(store)">
+        <ion-thumbnail item-start>
+          <img src="{{store.image}}">
+        </ion-thumbnail>
+        <h2>Store: {{store.number}}</h2>
+        <p>{{store.address}}</p>
+        <button ion-button clear item-end>Store Page</button>
+    </ion-item>
+  </ion-list>
 </ion-content>
