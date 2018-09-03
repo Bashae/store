@@ -8,19 +8,22 @@ import { LaunchNavigator } from '@ionic-native/launch-navigator';
   templateUrl: 'store.html',
 })
 export class StorePage {
-  store: {};
+  store: {
+    address: string;
+  };
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private launchNavigator: LaunchNavigator) {
     this.store = navParams.get('store');
-    console.log(this.store);
   }
 
   goToLocation() {
-    this.launchNavigator.navigate(this.store.address)
-    .then(
-      success => console.log('Launched navigator'),
-      error => console.log('Error launching navigator', error)
-    );
+    if(this.store.address) {
+      this.launchNavigator.navigate(this.store.address)
+      .then(
+        success => console.log('Launched navigator'),
+        error => console.log('Error launching navigator', error)
+      );
+    }
   }
 
 }

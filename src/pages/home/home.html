@@ -1,23 +1,16 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      North Central
-    </ion-title>
-  </ion-navbar>
-</ion-header>
+<header></header>
 
-<ion-content padding>
+<ion-content padding class="body--top-padding">
+  <ion-list>
+    <ion-list-header class="header--borderless">
+      Employee ID:
+    </ion-list-header>
+    <ion-item class="number--id">1691304891</ion-item>
+  </ion-list>
   <ion-list>
     <ion-list-header>
-      Store List
+      Employee Max ID:
     </ion-list-header>
-    <ion-item *ngFor="let store of stores" (click)="goToStore(store)">
-        <ion-thumbnail item-start>
-          <img src="{{store.image}}">
-        </ion-thumbnail>
-        <h2>Store: {{store.number}}</h2>
-        <p>{{store.address}}</p>
-        <button ion-button clear item-end>Store Page</button>
-    </ion-item>
+    <ion-item class="number--id">8675309</ion-item>
   </ion-list>
 </ion-content>

@@ -1,13 +1,9 @@
-<ion-header>
+<header [title]="store.number"></header>
 
-  <ion-navbar>
-    <ion-title>Store: {{store.number}}</ion-title>
-  </ion-navbar>
-
-</ion-header>
-
-
-<ion-content>
+<ion-content padding class="body--top-padding">
+  <button ion-button icon-only>
+    <ion-icon name="happy"></ion-icon>
+  </button>
   <ion-card>
     <img src="{{store.image}}" alt="">
     <ion-card-content>

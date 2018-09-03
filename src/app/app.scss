@@ -14,3 +14,73 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+.number--id {
+    text-align: center;
+    font-size: 30px;
+    color: #aaa;
+}
+
+.header--borderless {
+    border: none;
+}
+
+.back-button.show-back-button {
+    display: none;
+}
+
+.body--top-padding {
+    ion-app.md [padding] .scroll-content, 
+    [padding] .scroll-content,
+    .scroll-content {
+        padding-top: 56px !important;
+    }
+}
+
+ion-icon {
+    color: white;
+}
+
+.header {
+    ion-icon {
+        color: red;
+    }
+}
+
+button.disable-hover.item-button.button.button-md.button-clear.button-clear-md {
+    color: white;
+}
+
+ion-content.body--top-padding.content.content-md {
+    background: red;
+    color: white;
+}
+
+ion-list-header.header--borderless.item.item-md.list-header.list-header-md {
+    background: red;
+    color: white;
+}
+
+ion-list-header.item.item-md.list-header.list-header-md {
+    background: red;
+    color: white;
+}
+
+ion-item.number--id.item.item-block.item-md {
+    background: red;
+    color: white;
+}
+
+ion-item.item.item-block.item-md, ion-item.item.item-block.item-md p {
+    background: red;
+    color: white;
+}
+
+ion-list-header, ion-item {
+    background: red;
+    color: white;
+}
+
+.list-md .item-block .item-inner {
+    border-color: white;
+}

@@ -12,6 +12,8 @@ import { EmployeePage } from '../pages/employee/employee';
 import { EmployeeListPage } from '../pages/employee-list/employee-list';
 import { LaunchNavigator } from '@ionic-native/launch-navigator';
 
+import { HeaderComponent } from '../components/header/header';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -19,7 +21,8 @@ import { LaunchNavigator } from '@ionic-native/launch-navigator';
     StorePage,
     StoreListPage,
     EmployeePage,
-    EmployeeListPage
+    EmployeeListPage,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +35,8 @@ import { LaunchNavigator } from '@ionic-native/launch-navigator';
     StorePage,
     StoreListPage,
     EmployeePage,
-    EmployeeListPage
+    EmployeeListPage,
+    HeaderComponent
   ],
   providers: [
     LaunchNavigator,

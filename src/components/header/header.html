@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      <ion-icon name="home" style="margin-right: 15px;" (click)="goToPage('home')"></ion-icon>
+      North Central
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="goToPage('contacts')">
+        <ion-icon name="contacts"></ion-icon>
+      </button>
+      <button ion-button icon-only (click)="goToPage('stores')">
+        <ion-icon name="business"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
