@@ -24,7 +24,14 @@ page-store {
         box-shadow: none;
     }
     .card {
-        background:red;
-        box-shadow: 0 2px 2px 0 rgba(255, 255, 255, .5), 0 3px 1px -2px rgba(255, 255, 255, .5), 0 1px 5px 0 rgba(255, 255, 255, .5)
+        // background:red;
+        box-shadow: 0 2px 2px 0 rgba(255, 255, 255, .5), 0 3px 1px -2px rgba(255, 255, 255, .5), 0 1px 5px 0 rgba(255, 255, 255, .5);
+        ion-item.item.item-block.item-md {
+            background: white;
+            color: red;
+            ion-icon.icon.item-icon{
+                color: red;
+            }
+        }
     }
 }
