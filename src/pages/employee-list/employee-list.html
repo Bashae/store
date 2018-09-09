@@ -1,5 +1,9 @@
 <header></header>
 
 <ion-content padding>
-
+    <ion-list style="padding-top: 60px !important">
+        <li *ngFor="let employee of employeeList">
+            <h1>{{employee.name}}</h1>
+        </li>
+    </ion-list>
 </ion-content>

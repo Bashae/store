@@ -1,13 +1,13 @@
 <header [title]="store.number"></header>
 
 <ion-content padding class="body--top-padding">
-  <button ion-button icon-only class="button--back">
+  <button ion-button icon-only class="button--back" (click)="goBackPage()">
     <ion-icon name="arrow-back"></ion-icon>
   </button>
   <ion-card>
     <img src="{{store.image}}" alt="">
     <ion-card-content>
-      <ion-item>
+      <ion-item class="border--bottom">
         <ion-icon name="navigate" item-start (click)="goToLocation()"></ion-icon>
           {{store.address}}<br>
           {{store.address2}}
@@ -16,7 +16,7 @@
         <ion-icon name="call" item-start>
           <a style="text-indent: -9999px;" href="tel:{{store.telephone}}">{{store.telephone}}</a>
         </ion-icon>
-        <a href="tel:{{store.telephone}}">{{store.telephone}}</a>
+        <a href="tel:{{store.telephone}}" class="number--store">{{store.telephone}}</a>
       </ion-item>
     </ion-card-content>
   </ion-card>

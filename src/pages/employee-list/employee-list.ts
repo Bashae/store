@@ -1,12 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { Observable } from 'rxjs/Observable';
 
-/**
- * Generated class for the EmployeeListPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
 @IonicPage()
 @Component({
@@ -14,12 +9,15 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'employee-list.html',
 })
 export class EmployeeListPage {
+  employeeList: any[];
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad EmployeeListPage');
+    this.employeeList = [
+      {name: "Meagan Murphy", number: "(123) 123-1234", location: "14", title: "MDM"},
+      {name: "Andrew Ice", number: "(123) 123-1234", location: "14", title: "MIT"},
+      {name: "Karston Grant", number: "(123) 123-1234", location: "14", title: "AM"},
+      {name: "Heather Mead", number: "(123) 123-1234", location: "14", title: "SM"}
+    ]
   }
 
 }

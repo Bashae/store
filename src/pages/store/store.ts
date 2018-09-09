@@ -18,12 +18,16 @@ export class StorePage {
 
   goToLocation() {
     if(this.store.address) {
-      this.launchNavigator.navigate(this.store.address)
+      this.launchNavigator.navigate('Mattress Firm ' + this.store.address)
       .then(
         success => console.log('Launched navigator'),
         error => console.log('Error launching navigator', error)
       );
     }
+  }
+
+  goBackPage() {
+    this.navCtrl.pop();
   }
 
 }
